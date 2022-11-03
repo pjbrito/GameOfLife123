@@ -8,10 +8,11 @@
             for (var i = 0; i < v; i++)
             {
                 var cur = gol.GetCurrentGridVis();
+                cur = cur.Replace("0", " ");
                 Console.Clear();
                 Console.WriteLine($"{i}\n");
                 Console.WriteLine(cur);
-                Thread.Sleep(300);
+                Thread.Sleep(200);
                 gol.NextGen();
             }
         }
