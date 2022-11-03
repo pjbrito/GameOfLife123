@@ -24,7 +24,7 @@
             /*  Any live cell (live to dead)
                 1. with fewer than two live neighbours dies, as if caused by underpopulation.  < 2
                 2. with more than three live neighbours dies, as if by overcrowding.           > 3
-                
+
                 Any live cell
                 3. with two or three live neighbours lives on to the next generation.          = 2 or 3
 

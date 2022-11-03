@@ -22,7 +22,7 @@ namespace GameOfLifeTests
         }
 
         [Fact]
-        public void NextGen_LiveCellWithNoLiveNeighbours_ResultsInNoLiveCells()
+        public void NextGen_1Rule_LiveCellWithNoLiveNeighbours_ResultsInNoLiveCells()
         {
             //arrange
             int[,] startingGrid = new int[,]
@@ -49,7 +49,7 @@ namespace GameOfLifeTests
         }
 
         [Fact]
-        public void NextGen_Cells_LiveWithTwoLiveNeighboursAt_1_0_AndDeadWithExactlyThreeLiveNeighboursAt_1_1_ResultsInSameCellSurviving()
+        public void NextGen_2Rules_Cells_LiveWithTwoLiveNeighboursAt_1_0_AndDeadWithExactlyThreeLiveNeighboursAt_1_1_ResultsInSameCellSurviving()
         {
             //arrange
             int[,] startingGrid = new int[,]
