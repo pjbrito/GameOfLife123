@@ -2,9 +2,20 @@
 {
     public class VisualizeGameOfLive
     {
-        internal void RunIterations(int v, int[,] gameGrid)
+        public void RunIterations(int v, string strArray)
         {
-            var gol = new GameOfLife(gameGrid);
+            var g = new GameOfLife(strArray);
+            RunVisLoop(v, g);
+        }
+
+        public void RunIterations(int v, int[,] gameGrid)
+        {
+            var g = new GameOfLife(gameGrid);
+            RunVisLoop(v, g);
+        }
+
+        private static void RunVisLoop(int v, GameOfLife gol)
+        {
             for (var i = 0; i < v; i++)
             {
                 var cur = gol.GetCurrentGridVis();

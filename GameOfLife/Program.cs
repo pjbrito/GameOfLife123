@@ -72,7 +72,19 @@
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
             };
 
-            (new VisualizeGameOfLive()).RunIterations(100, startingGrid);
+            var game01 = @"                                      
+                        X             
+                      X X             
+            XX      XX             XX 
+           X   X    XX             XX 
+ XX       X     X   XX                
+ XX       X   X XX    X X             
+          X     X       X             
+           X   X                      
+            XX                        
+                                      ";
+
+            (new VisualizeGameOfLive()).RunIterations(100, game01);
         }
     }
 }

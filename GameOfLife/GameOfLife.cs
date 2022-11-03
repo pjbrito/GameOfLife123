@@ -9,6 +9,12 @@
             this.grid = grid;
         }
 
+        public GameOfLife(string strArray)
+        {
+            var conv = new ConvertSpacesAndXsInto2DMultiDimensionalArray();
+            this.grid = conv.Convert(strArray);
+        }
+
         public int[,] GetCurrentGrid()
         {
             return grid;
